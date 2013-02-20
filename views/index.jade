@@ -1,0 +1,16 @@
+doctype 5
+html
+	head
+		title Index Baby
+		script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+		script(type='text/javascript', src='/socket.io/socket.io.js')
+		script(type='text/javascript', src='/index_sock.js')
+	body
+		h2 Type something in to send to everyone!
+		label Type in your Room Number 
+			input(type='text', id='room_number')
+		br
+		br
+		textarea(id='text_yo', rows='30', cols='50')
+		br
+		input(type='button', id='send_shit', value='Send Baby!') 

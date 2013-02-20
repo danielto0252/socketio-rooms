@@ -1,0 +1,17 @@
+doctype 5
+html
+	head
+		title Receivers Baby!
+		script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+		script(type='text/javascript', src='/socket.io/socket.io.js')
+		script(type='text/javascript', src='/receive_sock.js')
+	body
+		h2 You will receive wisdom from the master!
+		label Join this room! 
+			input(type='text', id='room')
+			input(type='button', id='join_room', value='Join Now')
+		br
+		br
+		textarea(id='text_yo', rows='30', cols='50', readonly)
+		br
+		input(type='button', id='clear_shit', value='Clear!') 
